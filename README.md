@@ -4,6 +4,7 @@
   - source /opt/ros/melodic/setup.bash
   - cd ~/anro-szostak
   - catkin_make
+  - source ~/anro-szostak/devel/setup.bash
   - roslaunch zolw zolw.launch
 
 
