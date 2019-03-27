@@ -12,15 +12,15 @@ int main(int argc, char **argv)
 	ros::Publisher chatter_pub = n.advertise<geometry_msgs::Twist>("/turtle1/cmd_vel", 1);
 
 	ros::Rate loop_rate(10);
-	printf("Hi");
+	
 	geometry_msgs::Twist turtle_command;
 	char comm;
 	while (ros::ok())
 	{
 
 		std::cin >> comm;
-		std::cout<<comm;
-		printf("Hi");
+		std::cout<<"You pressed" << comm;
+		
 		switch(comm){
 			case 'w':
 				turtle_command.linear.x = 1.0;
