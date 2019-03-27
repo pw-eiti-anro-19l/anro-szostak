@@ -18,9 +18,9 @@ int main(int argc, char **argv)
 	while (ros::ok())
 	{
 
+		ROS_INFO("\n w - forward \n a - left \n d - right \n s- back \n ctrl+C - quit \n");
 		std::cin >> comm;
-		std::cout<<"You pressed" << comm;
-		
+		ROS_INFO("You pressed %c \n", comm);
 		switch(comm){
 			case 'w':
 				turtle_command.linear.x = 1.0;
